@@ -111,7 +111,7 @@ body {
   color: #fff;
 }
 
-.hamburger-menu {
+header.navbar .hamburger-menu {
   display: none;
 }
 

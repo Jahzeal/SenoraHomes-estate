@@ -16,7 +16,7 @@
     display: flex;
   }
 
-  .hamburger-menu {
+  header.navbar .hamburger-menu {
     display: block;
   }
 }
