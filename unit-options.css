@@ -22,3 +22,161 @@
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
+/*
+====================================
+  BOXED PAGE CONTENT STYLING (The Shadow Box)
+====================================
+*/
+
+/* Outer wrapper to center the box and provide padding/background */
+.page-content-wrapper {
+    padding: 40px 20px; 
+    background-color: #f7f7f7; /* Very light gray background outside the box */
+}
+
+.page-content-box {
+    /* Center the box */
+    max-width: 1000px;
+    margin: 0 auto;
+    
+    /* Box Appearance */
+    background-color: white;
+    border-radius: 5px; /* Subtle rounded corners */
+    padding: 40px; /* Internal padding around all content */
+    
+    /* CRITICAL: The Soft Drop Shadow */
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15); 
+}
+
+/* --- Content Typography and Dividers --- */
+
+.content-divider {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 30px 0;
+}
+
+.content-subheading {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1E3B70; /* Dark Blue title */
+    margin-bottom: 20px;
+}
+
+/* --- Section 1: Features Summary (Bed/Bath/Area) --- */
+.property-id-label {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.features-summary {
+    display: flex;
+    gap: 40px;
+    padding-bottom: 10px;
+}
+
+.features-summary .feature-item {
+    text-align: left;
+}
+
+.features-summary .feature-icon {
+    font-size: 24px;
+    color: #007bff; /* Accent color */
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.features-summary .feature-label {
+    font-size: 14px;
+    color: #777;
+    display: block;
+}
+
+.features-summary .feature-value {
+    font-size: 20px;
+    font-weight: 700;
+    color: #222;
+}
+
+
+/* --- Section 3: Features List (Checkmarks) --- */
+.features-list-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    text-align: left;
+}
+
+.feature-check {
+    font-size: 15px;
+    color: #555;
+    padding: 5px 0;
+}
+
+.feature-check::before {
+    /* Styles the checkmark before the text */
+    content: "";
+    margin-right: 8px;
+    color: #007bff;
+}
+
+/* --- Section 4: Floor Plans --- */
+.floorplan-title {
+    font-size: 24px;
+    font-weight: 800;
+    color: #222;
+    margin-bottom: 30px;
+}
+
+.floorplan-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+/* --- Responsiveness --- */
+@media (max-width: 700px) {
+    .page-content-box {
+        padding: 20px;
+    }
+    .features-summary {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .features-list-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/*
+====================================
+  FINAL COPYRIGHT BAR
+====================================
+*/
+.copyright-bar {
+    background-color: #1E3B70; /* Deep Indigo Blue */
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.copyright-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tagline {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    opacity: 0.9;
+}
+
+.copyright-text {
+    font-size: 13px;
+    opacity: 0.7;
+    margin-top: 0;
+}
