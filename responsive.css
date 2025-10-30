@@ -1,0 +1,81 @@
+@media (max-width: 1024px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer-container {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .footer-col {
+    flex: 1 1 calc(50% - 20px);
+  }
+  .purpose-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .vertical-accent-bar {
+    display: none;
+  }
+  .purpose-content {
+    padding-left: 0;
+  }
+  .residential-houses-container,
+  .residential-text-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .section-first-container > div {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .section-first-container > div > div:first-child {
+    min-width: 100%;
+    order: 2;
+    margin: 0 auto;
+  }
+  .section-first-container > div > div:last-child {
+    order: 1;
+    width: 100%;
+    padding-top: 0;
+  }
+  h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 650px) {
+  .residential-houses-container,
+  .residential-text-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+  }
+  .footer-col {
+    flex: 1 1 100%;
+  }
+  .residential-card {
+    height: 300px;
+  }
+}
