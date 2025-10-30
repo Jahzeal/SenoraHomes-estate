@@ -8,20 +8,24 @@ function plusSlides(n) {
 
 // Show slide on hover
 const heroSlider = document.querySelector(".hero-slider");
-heroSlider.addEventListener("mouseenter", () => plusSlides(1)); // change on hover
+if (heroSlider) {
+  heroSlider.addEventListener("mouseenter", () => plusSlides(1)); // change on hover
+}
 
 // Main slide function
 function showSlides(n) {
   let slides = document.querySelectorAll(".slide");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
+  if (slides.length > 0) {
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
 
-  slides.forEach((slide) => (slide.style.display = "none"));
-  slides[slideIndex - 1].style.display = "block";
+    slides.forEach((slide) => (slide.style.display = "none"));
+    slides[slideIndex - 1].style.display = "block";
+  }
 }
 
 // to play
