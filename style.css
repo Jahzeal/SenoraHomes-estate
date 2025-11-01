@@ -200,7 +200,7 @@ body {
   }
 
   .nav-links.active {
-    display: flex;
+    display: block;
   }
 
   .nav-links a {
