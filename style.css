@@ -168,7 +168,19 @@ body {
 /* ==================================
    MOBILE MENU (HAMBURGER NAV)
 ================================== */
+.hamburger {
+  display: none;
+}
+
 @media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
   .hamburger {
     display: flex;
     flex-direction: column;

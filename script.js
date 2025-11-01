@@ -113,8 +113,9 @@ function plusSlides(n) {
 
 // to play
 const thumbnail = document.getElementById("thumbnail");
-thumbnail.addEventListener("click", function () {
-  this.outerHTML = `
+if (thumbnail) {
+  thumbnail.addEventListener("click", function () {
+    this.outerHTML = `
       <iframe
         width="560"
         height="315"
@@ -123,7 +124,8 @@ thumbnail.addEventListener("click", function () {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen>
       </iframe>`;
-});
+  });
+}
 
 // form
 // Get the modal element
@@ -148,12 +150,16 @@ window.onclick = function (event) {
 
 
 // humburger
-const hamburger = document.getElementById("hamburger");
-const navLinks = document.getElementById("nav-links");
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
 
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  navLinks.classList.toggle("active");
+  if (hamburger && navLinks) {
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navLinks.classList.toggle("active");
+    });
+  }
 });
 
 
