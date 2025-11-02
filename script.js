@@ -111,49 +111,62 @@ function plusSlides(n) {
 // <button onclick="plusSlides(1)">Next</button>
 // <button onclick="plusSlides(-1)">Previous</button>
 
-// to play
-const thumbnail = document.getElementById("thumbnail");
-thumbnail.addEventListener("click", function () {
-  this.outerHTML = `
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/C3LzJoHkS6Q?autoplay=1"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>`;
-});
-
-// form
-// Get the modal element
-const modal = document.getElementById("brochureModal");
-function openModal() {
-  const showForm = document.getElementById("brochureModal");
-  showForm.style.display = "flex";
-}
-
-
-function closeModal()
-{
-    const closeForm = document.getElementById("brochureModal");
-    closeForm.style.display = "none";
-}
-
-window.onclick = function (event) {
-  if (event.target === modal) {
-    closeModal();
+document.addEventListener("DOMContentLoaded", () => {
+  // to play
+  const thumbnail = document.getElementById("thumbnail");
+  if (thumbnail) {
+    thumbnail.addEventListener("click", function () {
+      this.outerHTML = `
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/C3LzJoHkS6Q?autoplay=1"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>`;
+    });
   }
-};
 
+  // form
+  // Get the modal element
+  const modal = document.getElementById("brochureModal");
 
-// humburger
-const hamburger = document.getElementById("hamburger");
-const navLinks = document.getElementById("nav-links");
+  // Attach event listeners to buttons that open the modal
+  const openModalBtns = document.querySelectorAll("[onclick='openModal()']");
+  openModalBtns.forEach(btn => {
+    btn.addEventListener('click', openModal);
+    btn.removeAttribute('onclick');
+  });
 
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  navLinks.classList.toggle("active");
+  function openModal() {
+    if(modal) modal.style.display = "flex";
+  }
+
+  function closeModal() {
+    if(modal) modal.style.display = "none";
+  }
+
+  // Attach event listener to close button
+  const closeBtn = document.querySelector(".close-btn");
+  if(closeBtn) closeBtn.addEventListener('click', closeModal);
+
+  window.onclick = function (event) {
+    if (event.target === modal) {
+      closeModal();
+    }
+  };
+
+  // humburger
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+
+  if (hamburger && navLinks) {
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navLinks.classList.toggle("active");
+    });
+  }
 });
 
 
