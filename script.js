@@ -128,34 +128,43 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // form
-  // Get the modal element
-  const modal = document.getElementById("brochureModal");
 
-  // Attach event listeners to buttons that open the modal
-  const openModalBtns = document.querySelectorAll("[onclick='openModal()']");
-  openModalBtns.forEach(btn => {
-    btn.addEventListener('click', openModal);
-    btn.removeAttribute('onclick');
-  });
+// --- Modal Setup ---
+const brochureModal = document.getElementById("brochureModal");
+const inquireModal = document.getElementById("inquireModal");
 
-  function openModal() {
-    if(modal) modal.style.display = "flex";
+// Function to open modal based on type
+function openModal(type) {
+  if (type === "brochure" && brochureModal) {
+    brochureModal.style.display = "flex";
+  } else if (type === "inquire" && inquireModal) {
+    inquireModal.style.display = "flex";
   }
+}
 
-  function closeModal() {
-    if(modal) modal.style.display = "none";
+// Function to close all modals
+function closeModal() {
+  if (brochureModal) brochureModal.style.display = "none";
+  if (inquireModal) inquireModal.style.display = "none";
+}
+
+// Attach event listeners to open buttons
+const inquireBtn = document.querySelector(".inquire-btn");
+const brochureBtn = document.querySelector(".brochure-btn");
+
+if (inquireBtn) inquireBtn.addEventListener("click", () => openModal("inquire"));
+if (brochureBtn) brochureBtn.addEventListener("click", () => openModal("brochure"));
+
+// Attach event listeners to close buttons
+const closeBtns = document.querySelectorAll(".close-btn");
+closeBtns.forEach((btn) => btn.addEventListener("click", closeModal));
+
+// Close modal when clicking outside the content
+window.addEventListener("click", (e) => {
+  if (e.target === brochureModal || e.target === inquireModal) {
+    closeModal();
   }
-
-  // Attach event listener to close button
-  const closeBtn = document.querySelector(".close-btn");
-  if(closeBtn) closeBtn.addEventListener('click', closeModal);
-
-  window.onclick = function (event) {
-    if (event.target === modal) {
-      closeModal();
-    }
-  };
+});
 
   // humburger
   const hamburger = document.getElementById("hamburger");
