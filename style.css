@@ -33,19 +33,17 @@ body {
 
 /* logo */
 .logo-div {
-  height: 100%;
-  width: 200px;
+  height: auto;
+  width: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border-radius: 30px;
 }
 .logo-div img {
-  width: 50%;
-  height: 50%;
-  object-fit: cover;
-  border-radius: 30px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .nav-links {
@@ -168,7 +166,19 @@ body {
 /* ==================================
    MOBILE MENU (HAMBURGER NAV)
 ================================== */
+.hamburger {
+  display: none;
+}
+
 @media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
   .hamburger {
     display: flex;
     flex-direction: column;
