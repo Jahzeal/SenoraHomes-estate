@@ -148,11 +148,16 @@ window.onclick = function (event) {
   }
 };
 
-document.addEventListener("DOMContentLoaded", function () {
-  const hamburgerMenu = document.querySelector(".hamburger-menu");
-  const navLinks = document.querySelector(".nav-links");
 
-  hamburgerMenu.addEventListener("click", function () {
-    navLinks.classList.toggle("active");
-  });
+// humburger
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+
+  if (hamburger && navLinks) {
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navLinks.classList.toggle("active");
+    });
+  }
 });
