@@ -175,5 +175,15 @@ window.addEventListener("click", (e) => {
       hamburger.classList.toggle("active");
       navLinks.classList.toggle("active");
     });
+
+    const navItems = document.querySelectorAll(".nav-item a");
+    navItems.forEach(item => {
+        item.addEventListener("click", () => {
+            if (navLinks.classList.contains("active")) {
+                hamburger.classList.remove("active");
+                navLinks.classList.remove("active");
+            }
+        });
+    });
   }
 });

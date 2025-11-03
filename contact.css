@@ -1,0 +1,143 @@
+.contact-us {
+  padding: 60px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-container {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.contact-image {
+  flex: 1;
+  min-width: 45%;
+}
+
+.contact-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-form-wrapper {
+  flex: 1;
+  padding: 40px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-form-wrapper h2 {
+  font-size: 2rem;
+  color: #0a3d62;
+  margin-bottom: 10px;
+}
+
+.contact-form-wrapper p {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  text-align: left;
+}
+
+.form-group.full-width {
+  flex: 100%;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+label span {
+  color: red;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #0a3d62;
+  outline: none;
+}
+
+.phone-field {
+  display: flex;
+  gap: 10px;
+}
+
+.send-btn {
+  width: 100%;
+  background: #0a3d62;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.send-btn:hover {
+  background: #1e6091;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-image {
+    height: 250px;
+  }
+}
+
+.back-to-home{
+  border: 3px solid;
+border-color: lawngreen;  height: auto;
+  width: auto;
+  padding: 7px 5px;
+  border-radius: 20px;
+}
+.back-to-home:hover{
+  background-color: lawngreen;
+}
+.back-to-home a{
+  text-decoration: none;
+}
