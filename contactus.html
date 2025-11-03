@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Senora Homes</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <div class="logo-div">
+          <img
+            src="assets/Senora(logo).jpg"
+            alt="Senora Homes Logo"
+            class="logo"
+          />
+        </div>
+
+        
+
+        <!-- Navigation Links -->
+        <div class="nav-links" id="nav-links">
+          <div class="nav-item"><a href="index.html">HOME</a></div>
+          <!-- <div class="nav-item"><a href="#about">ABOUT US</a></div> -->
+          <div class="nav-item dropdown">
+            <a href="#">Projects</a>
+            <div class="dropdown-menu">
+              <a href="Hillview.html">Hillview Estate</a>
+              <a href="wellsapartment.html">Wells Apartment - SOLD OUT</a>
+              <a href="thelaurelpark.html">The Laurel Park - SOLD OUT</a>
+            </div>
+          </div>
+          <div class="nav-item dropdown">
+            <a href="#">NEWS & MEDIA</a>
+            <div class="dropdown-menu">
+              <a href="#">NEWS & STORIES</a>
+              <a href="photo-gallery.html">PHOTO GALLERY</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="back-to-home">
+          <a href="index.html">SenoraHomes</a>
+        </div>
+      </div>
+    </header>
+    <section class="contact-us">
+  <div class="contact-container">
+    <!-- Left side: Image or Map -->
+    <div class="contact-image">
+      <img src="assets/senoragate.jpg" alt="SenoraHomes Property" />
+    </div>
+
+    <!-- Right side: Form -->
+    <div class="contact-form-wrapper">
+      <h2>Contact Us</h2>
+      <p>Buying at SenoraHomes is an investment in your future.</p>
+
+      <form class="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name<span>*</span></label>
+            <input type="text" placeholder="First Name" required />
+          </div>
+
+          <div class="form-group">
+            <label>Last Name<span>*</span></label>
+            <input type="text" placeholder="Last Name" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group full-width">
+            <label>Email<span>*</span></label>
+            <input type="email" placeholder="Email Address" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group country-code">
+            <label>Phone Number<span>*</span></label>
+            <div class="phone-field">
+              <select>
+                <option value="NG">Nigeria</option>
+                <option value="GH">Ghana</option>
+                <option value="US">United States</option>
+              </select>
+              <input type="tel" placeholder="+234" required />
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group full-width">
+            <label>Message</label>
+            <textarea rows="4" placeholder="Type your message..."></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="send-btn">SEND MESSAGE</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+  </body>
+</html>
