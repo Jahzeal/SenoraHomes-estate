@@ -509,15 +509,23 @@ a[href="https://www.blackivygroup.com/"]:hover
 
 /* --- Background Images (Applied with a B&W filter) --- */
 .residential-house-greenwich {
-  background-image: url("assets/estate(new).jpg"); /* Using your existing URLs */
+  background-image: url("assets/estate.jpg"); /* Using your existing URLs */
   filter: grayscale(80%) brightness(85%);
 }
 .residential-house-oyarifa {
-  background-image: url("assets/estate.jpg");
+  background-image: url("assets/soldout.jpg");
+  filter: grayscale(80%) brightness(85%);
+}
+.residential-house-pines{
+  background-image: url("assets/senoragate.jpg");
+  filter: grayscale(80%) brightness(85%);
+}
+.residential-house-court {
+  background-image: url("assets/orchid.jpg");
   filter: grayscale(80%) brightness(85%);
 }
 .residential-house-ayimensah {
-  background-image: url("assets/senora(estate303).jpg");
+  background-image: url("assets/laurelhomes.jpg");
   filter: grayscale(80%) brightness(85%);
 }
 
