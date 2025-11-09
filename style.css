@@ -111,6 +111,9 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+.inquire-btn a {
+  text-decoration: none;
+}
 
 .inquire-btn:hover {
   background: #007bff;
