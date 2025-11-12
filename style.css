@@ -177,6 +177,7 @@ body {
 ================================== */
 .hamburger {
   display: none;
+
 }
 
 @media (max-width: 768px) {
@@ -194,6 +195,9 @@ body {
     cursor: pointer;
     gap: 6px;
     z-index: 1001;
+  }
+  .hamburger > .nav-item a{
+    text-decoration: none;
   }
 
   .hamburger span {

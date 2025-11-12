@@ -39,7 +39,7 @@
              <div class="dropdown-menu">
               <a href="Hillview.html">Hillview Estate</a>
               <a href="wellsapartment.html">Wells Apartment -1 - SOLD OUT</a>
-              <a href="thelaurelpark.html">Wells Apartment -2 - SOLD OUT</a>
+              <a href="wellsapartment-2.html">Wells Apartment -2 - SOLD OUT</a>
               <a href="thelaurelpark.html">The Laurel Park - New Development</a>
             </div>
           </div>
@@ -62,14 +62,13 @@
             Please provide your information 
           </p>
 
-          <form class="brochure-form">
-            <input type="text" placeholder="Full Name" required />
-            <input type="email" placeholder="Email Address" required />
-            <input type="tel" placeholder="Phone Number (Optional)" />
-            <button type="submit" class="submit-btn">
-              Call Me
-            </button>
-          </form>
+         
+           <form id="brochureForm" class="brochure-form">
+  <input type="text" name="full_name" placeholder="Full Name" required />
+  <input type="email" name="email" placeholder="Email Address" required />
+  <input type="tel" name="phone" placeholder="Phone Number (Optional)" />
+  <button type="submit" class="submit-btn">Send Me the Brochure</button>
+</form>
         </div>
       </div>  
       </div>
@@ -341,7 +340,8 @@
         <a href="#" class="privacy-link">Legal | Privacy Policy</a>
     </div>
 </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="doc.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
