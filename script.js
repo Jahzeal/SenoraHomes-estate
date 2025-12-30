@@ -5,7 +5,7 @@ let slideTimer;
 // --- Core Functionality ---
 function showSlides() {
   let slides = document.querySelectorAll(".slide");
-  if (slides.length === 0) return; // ⛔ Skip if no slides
+  if (slides.length === 0) return; // Skip if no slides
 
   slides.forEach((slide) => (slide.style.display = "none"));
   slideIndex++;
@@ -15,7 +15,7 @@ function showSlides() {
 
 function startAutoSlide() {
   const slides = document.querySelectorAll(".slide");
-  if (slides.length === 0) return; // ⛔ Skip if no slides
+  if (slides.length === 0) return; //  Skip if no slides
   if (!slideTimer) slideTimer = setInterval(showSlides, delay);
 }
 
@@ -24,7 +24,7 @@ function stopAutoSlide() {
   slideTimer = null;
 }
 
-// ✅ Only run slider logic if slides exist
+// Only run slider logic if slides exist
 document.addEventListener("DOMContentLoaded", () => {
   const slides = document.querySelectorAll(".slide");
   if (slides.length > 0) {

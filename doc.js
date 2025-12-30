@@ -15,12 +15,12 @@ document.addEventListener("DOMContentLoaded", function () {
           message: "New brochure request from SenoraHomes website",
         })
         .then(() => {
-          alert("✅ Brochure request sent successfully!");
+          alert("Brochure request sent successfully!");
           brochureForm.reset();
         })
         .catch((err) => {
           console.error(err);
-          alert("❌ Failed to send brochure request. Please try again.");
+          alert("Failed to send brochure request. Please try again.");
         });
     });
   }
