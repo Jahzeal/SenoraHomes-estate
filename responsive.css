@@ -38,7 +38,8 @@
     padding-left: 0;
   }
   .residential-houses-container,
-  .residential-text-container {
+  .residential-text-container,
+  .projects-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
@@ -63,7 +64,8 @@
 
 @media (max-width: 650px) {
   .residential-houses-container,
-  .residential-text-container {
+  .residential-text-container,
+  .projects-grid {
     grid-template-columns: 1fr;
   }
 }

@@ -483,14 +483,30 @@ a[href="https://www.blackivygroup.com/"]:hover
   width: fit-content;
 }
 
+/* --- Projects Grid (Combined Cards + Text) --- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.project-unit {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 /* --- 1. Top Section: Image Cards (3-Column Grid) --- */
+/* Kept for backward compatibility if used elsewhere, though now we use .project-unit a */
 .residential-houses-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-bottom: 50px; /* Space between images and text */
 }
-.residential-houses-container .bed {
+.residential-houses-container .bed, .project-unit .bed {
   font-weight: 1000;
   font-size: 1.5rem;
   /* color: black; */
@@ -591,12 +607,17 @@ a[href="https://www.blackivygroup.com/"]:hover
 }
 
 /* --- 2. Middle Section: Text Descriptions (3-Column Grid) --- */
+/* --- 2. Middle Section: Text Descriptions (Inside Grid) --- */
 .residential-text-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-bottom: 50px;
   text-align: left;
+}
+
+.community-text-block {
+    /* Ensure text block takes space */
 }
 
 .community-title {

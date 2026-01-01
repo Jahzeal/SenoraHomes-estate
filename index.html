@@ -54,7 +54,7 @@
             </div>
           </div>
           <div class="nav-item"><a href="contactus.html">CONTACT US</a></div>
-          <div id="inquireModal" class="modal">
+          <div id="inquireModalMobile" class="modal">
             <div class="modal-content">
               <span class="close-btn" onclick="closeModal()">&times;</span>
               <h2>Submit your information to get a Call or a Text</h2>
@@ -71,13 +71,13 @@
         </div>
 
         <button class="inquire-btn">INQUIRE</button>
-        <div id="inquireModal" class="modal">
+        <div id="inquireModalDesktop" class="modal">
           <div class="modal-content">
             <span class="close-btn" onclick="closeModal()">&times;</span>
             <h2>Submit your information to get a Call or a Text</h2>
             <p>Please provide your information</p>
 
-            <form id="brochureForm" class="brochure-form">
+            <form id="inquireFormDesktop" class="brochure-form">
               <input
                 type="text"
                 name="full_name"
@@ -219,80 +219,84 @@
         </div>
       </div>
 
-      <div class="residential-houses-container">
-        <a
-          href="Hillview.html"
-          class="residential-card residential-house-greenwich"
-          target="_blank"
-        >
-          <h3>Hillview Estate</h3>
-          <div class="button-div">
-            <span class="button-price">Prices starting from ₦ 95,000,000</span>
+      <div class="projects-grid">
+        <!-- Project Unit 1: Hillview -->
+        <div class="project-unit">
+          <a
+            href="Hillview.html"
+            class="residential-card residential-house-greenwich"
+            target="_blank"
+          >
+            <h3>Hillview Estate</h3>
+            <div class="button-div">
+              <span class="button-price">Prices starting from ₦ 95,000,000</span>
+            </div>
+          </a>
+          <div class="community-text-block">
+            <h4 class="community-title">Hillview Estate</h4>
+            <p>
+              At Hillview Estate, we’re transforming the idea of modern living by
+              combining sophistication, comfort, and peace of mind. Set amidst
+              beautifully landscaped gardens and serene surroundings, Hillview
+              Estate offers tastefully designed 3-bedroom and 4-bedroom terrace
+              duplexes made for today’s stylish and comfort-driven homeowner. The
+              estate includes a children’s playground, thoughtfully designed to
+              complement a refined lifestyle.
+            </p>
           </div>
-        </a>
-
-        <a
-          href="wellsapartment.html"
-          class="residential-card residential-house-oyarifa"
-          target="_blank"
-        >
-          <h3>Wells Apartment - 1</h3>
-          <div class="button-div">
-            <span class="button-price sold-out-button">Sold Out</span>
-          </div>
-        </a>
-
-        <a
-          href="thelaurelpark.html"
-          class="residential-card residential-house-ayimensah"
-          target="_blank"
-        >
-          <h3>Wells Apartment - 2</h3>
-          <div class="button-div">
-            <span class="button-price sold-out-button">Sold Out</span>
-          </div>
-        </a>
-      </div>
-
-      <div class="residential-text-container">
-        <div class="community-text-block">
-          <h4 class="community-title">Hillview Estate</h4>
-          <p>
-            At Hillview Estate, we’re transforming the idea of modern living by
-            combining sophistication, comfort, and peace of mind. Set amidst
-            beautifully landscaped gardens and serene surroundings, Hillview
-            Estate offers tastefully designed 3-bedroom and 4-bedroom terrace
-            duplexes made for today’s stylish and comfort-driven homeowner. The
-            estate includes a children’s playground, thoughtfully designed to
-            complement a refined lifestyle.
-          </p>
         </div>
 
-        <div class="community-text-block">
-          <h4 class="community-title">Wells Apartment -1</h4>
-          <p>
-            Welcome to Wells Apartment -1 a remarkable real estate development
-            in Nigeria. Discover our lively community situated in the heart of
-            Lagos, surrounded by captivating scenery. Each home reflects a
-            seamless blend of modern design and authentic Nigerian architecture,
-            creating the perfect living space crafted with precision. Experience
-            the comfort, elegance, and ease of life within this serene
-            residential haven.
-          </p>
+        <!-- Project Unit 2: Wells Apartment 1 -->
+        <div class="project-unit">
+          <a
+            href="wellsapartment.html"
+            class="residential-card residential-house-oyarifa"
+            target="_blank"
+          >
+            <h3>Wells Apartment - 1</h3>
+            <div class="button-div">
+              <span class="button-price sold-out-button">Sold Out</span>
+            </div>
+          </a>
+          <div class="community-text-block">
+            <h4 class="community-title">Wells Apartment -1</h4>
+            <p>
+              Welcome to Wells Apartment -1 a remarkable real estate development
+              in Nigeria. Discover our lively community situated in the heart of
+              Lagos, surrounded by captivating scenery. Each home reflects a
+              seamless blend of modern design and authentic Nigerian architecture,
+              creating the perfect living space crafted with precision. Experience
+              the comfort, elegance, and ease of life within this serene
+              residential haven.
+            </p>
+          </div>
         </div>
 
-        <div class="community-text-block">
-          <h4 class="community-title">Wells apartment -2</h4>
-          <p>
-            Wells apartment -2 is a lively residential community located in the
-            heart of Owerri. As Andersoft’s first development project in
-            Nigeria, it reflects our vision of creating beautiful homes and
-            vibrant neighborhoods where residents truly enjoy their
-            surroundings. With spacious open layouts, well-maintained green
-            areas, a community sports court, and a swimming pool, this
-            thoughtfully planned mixed-use estate offers both condominiums and
-            townhouses designed for modern Nigerian living.
-          </p>
+        <!-- Project Unit 3: Wells Apartment 2 -->
+        <div class="project-unit">
+          <a
+            href="thelaurelpark.html"
+            class="residential-card residential-house-ayimensah"
+            target="_blank"
+          >
+            <h3>Wells Apartment - 2</h3>
+            <div class="button-div">
+              <span class="button-price sold-out-button">Sold Out</span>
+            </div>
+          </a>
+          <div class="community-text-block">
+            <h4 class="community-title">Wells apartment -2</h4>
+            <p>
+              Wells apartment -2 is a lively residential community located in the
+              heart of Owerri. As Andersoft’s first development project in
+              Nigeria, it reflects our vision of creating beautiful homes and
+              vibrant neighborhoods where residents truly enjoy their
+              surroundings. With spacious open layouts, well-maintained green
+              areas, a community sports court, and a swimming pool, this
+              thoughtfully planned mixed-use estate offers both condominiums and
+              townhouses designed for modern Nigerian living.
+            </p>
+          </div>
         </div>
       </div>
       <div class="short-note-container">
@@ -450,7 +454,7 @@
     <footer id="footer" class="footer">
       <div class="footer-container">
         <div class="footer-col footer-brand-info">
-          <h4>SenoraHomes - A Andersoft Endeavour</h4>
+          <h4>SenoraHomes - An Andersoft Endeavour</h4>
           <p>
             SenoraHomes is a residential developer committed to helping people
             love where they live and in building futures - Present in Nigeria.
@@ -483,7 +487,7 @@
               ><i class="fab fa-tiktok"></i
             ></a>
             <a
-              href="https://https://www.instagram.com/senorahomes?igsh=cnEzeTJhZjB6ajEw"
+              href="https://www.instagram.com/senorahomes?igsh=cnEzeTJhZjB6ajEw"
               ><i class="fab fa-instagram"></i
             ></a>
           </div>
